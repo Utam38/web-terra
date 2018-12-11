@@ -137,6 +137,10 @@ article{
   color:gray;
 }
 
+.poema p:nth-last-child(2){
+  font-size:0.7rem;
+}
+
 .poema p:last-child{
   font-size:0.7rem;
 }
@@ -195,27 +199,46 @@ footer{
 
 .nav-bottom{
   display:flex;
-
+  text-align:center;
   align-items:center;
   width:30%;
-  background-color:orange;
-  border: solid 0px black;
-  border-radius:30px 30px 0px 0px;
 }
 
-.nav-bottom a{
+#up{
+  align-items:center;
+  margin-right: 5px;
+  min-width:100px;
+  background-color:orange;
+  border: solid 0px black;
+  border-radius:8px 8px 0px 0px;
   font-size: 1rem;
-  padding:10px;
+  padding:8px;/*12*/
   color:white;
   text-decoration:none;
-  text-align:center;
-  border-radius:30px 30px 0px 0px;
-
   flex-grow:1;
 }
 
-.nav-bottom a:hover{
+.f{
+  font-family: sans-serif;
+  text-align: right;
+  font-weight: bold;
+  min-width:30px;
+  height: 40px;
+  padding: 0px 5px 0px 20px;
+  background-color:#43609C;
+  border: solid 0px black;
+  font-size: 2rem;
+  color:white;
+  border-radius:7px 7px 0px 0px;
+  text-decoration:none;
+}
+
+#up:hover{
   background-color:/*nar.osc*/#EE6F15;
+}
+
+.f:hover{
+  background-color:/*azul.osc*/#123F6D;
 }
 
 footer a{
