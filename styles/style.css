@@ -1,0 +1,291 @@
+*{
+  box-sizing:border-box;
+}
+
+ dt{
+   font-weight:bold;
+ }
+
+ dd,ul{
+   font-style: oblique;
+   font-size: 0.9rem;
+ }
+
+ span{
+   display:inline-block; /*para q el tel. no se rompa*/
+ }
+
+body{
+  font-family:Oswald,sans-serif;
+  font-size:10px;
+  padding:0;
+  margin:0;
+  background-color:/*gr.claro*/#E5E5E5;
+  line-height: 1.5;
+  letter-spacing: .4px;
+  word-spacing: .2rem;
+}
+
+#contenedor{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+
+  width:90%;
+  max-width:900px;
+  margin:auto;
+}
+
+header{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-between;
+
+  align-items: center;
+  width:100%;
+  padding:3px 20px 0px 20px;
+  background-color:white;
+  border-radius:30px 30px 0px 0px;
+  border-bottom:solid orange 2px;
+  box-shadow: 0 0 1em gray;
+  margin-top:10px;
+  padding-bottom:10px;
+}
+
+#logo{
+  -moz-animation-duration: 3s;
+  -moz-animation-name: logotipo;
+}
+
+nav{
+  display:flex;
+
+  align-items:center;
+  width:50%;
+  /*background-color:orange;*/
+}
+
+nav a{
+  font-size: 1rem;
+  padding:10px;
+  background-color:orange;
+  color:white;
+  text-decoration:none;
+  text-align:center;
+
+  flex-grow:1;
+}
+
+.primero{
+  border-radius:0px 0px 0px 30px;
+}
+
+.ultimo{
+  border-radius:0px 30px 0px 0px;
+}
+
+nav a:hover{
+  background-color:/*nar.osc*/#EE6F15;
+}
+
+section{
+  display:flex;
+  flex-direction:column;
+  box-shadow: 0 10px 16px gray;
+
+  background-color: white;
+  width:100%;
+  align-items:center;
+  border-radius:0px 0px 30px 30px;
+  margin-bottom:20px;
+}
+
+article{
+  width: 90%;
+  font-size:1rem;
+  background-color:white;/*gris muy claro*/
+  margin-bottom:20px;
+  border-top:solid #E5E5E5 1px;/*gris muy claro*/
+}
+
+.inicio img{
+  border:solid /*gr.claro*/#E5E5E5 5px;
+  width:100%;
+}
+
+.peluqueria img{
+  border:solid /*gr.claro*/#E5E5E5 5px;
+  width:100%;
+}
+
+.terapias img{
+  border:solid /*gr.claro*/#E5E5E5 5px;
+  width:100%;
+}
+
+.talleres img{
+  border:solid /*gr.claro*/#E5E5E5 5px;
+  width:100%;
+}
+
+.poema{
+  text-align:center;
+  line-height:2px;
+  font-style:oblique;
+  font-size:1.5rem;
+  color:gray;
+}
+
+.poema p:last-child{
+  font-size:0.7rem;
+}
+
+.contactos{
+  text-align:center;
+}
+
+#grande{
+  font-size: 1.8rem;
+  text-shadow: 0 10px 16px gray;
+}
+
+.contactos h2{
+  text-align:center;
+}
+
+.contactos span{
+  background-color: #46B846;/*#28CC28;*/
+  color:white;
+  border-radius: 30px 30px 30px 30px;
+  padding: 0px 4px;
+}
+
+#face{
+  text-decoration:none;
+  background-color:#3F7FBF;
+  color:white;
+  padding: 0px 4px;
+}
+
+#face:hover{
+  background-color:#067FF8;
+}
+
+.contactos img{
+  border:solid white 5px;
+  border-radius:100%;
+  max-width:100%;
+}
+
+h1{
+  font-size:2rem;
+}
+
+.prueba div img{
+  text-align:center;
+}
+
+footer{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  font-size:0.7rem;
+}
+
+.nav-bottom{
+  display:flex;
+
+  align-items:center;
+  width:30%;
+  background-color:orange;
+  border: solid 0px black;
+  border-radius:30px 30px 0px 0px;
+}
+
+.nav-bottom a{
+  font-size: 1rem;
+  padding:10px;
+  color:white;
+  text-decoration:none;
+  text-align:center;
+  border-radius:30px 30px 0px 0px;
+
+  flex-grow:1;
+}
+
+.nav-bottom a:hover{
+  background-color:/*nar.osc*/#EE6F15;
+}
+
+footer a{
+  text-decoration:none;
+}
+
+
+/* //////////// MEDIA QUERYS /////////// */
+
+@media screen and (max-width:800px){
+
+  header{
+    flex-direction:column;
+  }
+
+  header div{
+    width:100%;
+  }
+
+  nav{
+    flex-wrap:wrap;
+    width:100%;
+    justify-content:center;
+  }
+
+  .primero{
+    border-radius:0px;
+  }
+
+  .ultimo{
+    border-radius:0px;
+  }
+
+  .icono{
+    width:auto;
+    justify-content:center;
+    align-items: center;
+  }
+
+  header{
+    padding:0;
+    border: none;
+  }
+
+  article{
+    font-size:0.8rem;
+  }
+
+  .poema{
+    font-size:0.8rem;
+  }
+
+  #grande,h1,h2{
+    font-size:1.4rem;
+  }
+
+  dd,ul{
+    font-size: 0.7rem;
+  }
+}
+
+/*////////////////////////////////////////*/
+
+@-moz-keyframes logotipo {
+  0% {
+    opacity: 0;
+    transform: scale(.4);
+  }
+  60% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
