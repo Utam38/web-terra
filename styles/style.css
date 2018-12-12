@@ -147,6 +147,8 @@ article{
 
 .contactos{
   text-align:center;
+  /*align-items:center;
+  align-content:center;*/
 }
 
 #grande{
@@ -201,21 +203,34 @@ footer{
   display:flex;
   text-align:center;
   align-items:center;
-  width:30%;
+  min-width:200px;
+  max.width:500px;
 }
 
 #up{
-  align-items:center;
-  margin-right: 5px;
+  /*align-content: center;
+  align-items:center;*/
+
   min-width:100px;
   background-color:orange;
-  border: solid 0px black;
-  border-radius:8px 8px 0px 0px;
+  border-radius:8px 0px 0px 0px;
   font-size: 1rem;
   padding:8px;/*12*/
   color:white;
   text-decoration:none;
   flex-grow:1;
+}
+
+.volver{
+
+  float:right;
+  color: white;
+  text-decoration: none;
+  text-align:right;
+  background: -moz-linear-gradient(left, white, orange);
+  border-radius: 0px;
+  padding-right:3px;
+  width:25%;
 }
 
 .f{
@@ -229,7 +244,7 @@ footer{
   border: solid 0px black;
   font-size: 2rem;
   color:white;
-  border-radius:7px 7px 0px 0px;
+  border-radius:0px 7px 0px 0px;
   text-decoration:none;
 }
 
