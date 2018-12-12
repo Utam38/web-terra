@@ -224,7 +224,7 @@ footer{
 .volver{
 
   float:right;
-  color: white;
+  color: gray;
   text-decoration: none;
   text-align:right;
   background: -moz-linear-gradient(left, white, orange);
