@@ -54,8 +54,8 @@ header{
 }
 
 #logo{
-  -moz-animation-duration: 3s;
-  -moz-animation-name: logotipo;
+  animation-duration: 3s;
+  animation-name: logotipo;
 }
 
 nav{
@@ -222,15 +222,17 @@ footer{
 }
 
 .volver{
-
   float:right;
-  color: gray;
+  color: white;
   text-decoration: none;
   text-align:right;
-  background: -moz-linear-gradient(left, white, orange);
-  border-radius: 0px;
-  padding-right:3px;
-  width:25%;
+  background:orange;
+  border-radius: 100px 0px 100px 100px;
+  padding: 0px 4px 0px 4px;
+}
+
+.volver:hover{
+  background-color: #EE6F15;
 }
 
 .f{
