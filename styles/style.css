@@ -73,7 +73,7 @@ nav a{
   color:white;
   text-decoration:none;
   text-align:center;
-
+  transition:all 0.5s;
   flex-grow:1;
 }
 
@@ -252,10 +252,12 @@ footer{
 
 .up:hover{
   background-color:/*nar.osc*/#EE6F15;
+  transition:all 0.5s;
 }
 
 .f:hover{
   background-color:/*azul.osc*/#123F6D;
+  transition:all 0.5s;
 }
 
 footer a{
